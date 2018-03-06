@@ -5,22 +5,21 @@ package com.example.anand.couponapp;
  */
 
 public class CouponData {
-    private String  brand,image, discount, description,condition, category,extra;
+    private String  brand,image, discount,condition, category,extra,featured;
 
     public CouponData(){
 
     }
 
-    public CouponData(String brand, String image, String discount,
-                      String description, String condition,
-                      String category, String extra) {
+    public CouponData(String brand, String image, String discount,String condition,
+                      String category, String extra,String featured) {
         this.brand = brand;
         this.image = image;
         this.discount = discount;
-        this.description = description;
         this.condition = condition;
         this.category = category;
         this.extra = extra;
+        this.featured=featured;
     }
 
     public String getBrand() {
@@ -35,10 +34,6 @@ public class CouponData {
         return discount;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public String getCondition() {
         return condition;
     }
@@ -49,5 +44,9 @@ public class CouponData {
 
     public String getExtra() {
         return extra;
+    }
+
+    public String getFeatured() {
+        return featured;
     }
 }

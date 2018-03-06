@@ -73,6 +73,14 @@
         tools:layout_editor_absoluteX="58dp"
         tools:layout_editor_absoluteY="253dp" />
 
+    <EditText
+        android:id="@+id/Featured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="featured"
+        android:inputType="textPersonName" />
+
     <Button
         android:id="@+id/btnSendata"
         android:layout_width="wrap_content"
