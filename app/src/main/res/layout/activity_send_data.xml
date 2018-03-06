@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.couponapp.send_data"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Imageurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="image url"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/BrandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="brand name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <EditText
+        android:id="@+id/Discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Discount percentage"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <EditText
+        android:id="@+id/conditionApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="conditions apply"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/extra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="category/mood"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <EditText
+        android:id="@+id/extra"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_above="@+id/btnSendata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="extra"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/btnSendata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="119dp"
+        android:text="Send Dtata"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="347dp" />
+</LinearLayout>
