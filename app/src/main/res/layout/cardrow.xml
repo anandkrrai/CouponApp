@@ -9,16 +9,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:background="@color/cardview_dark_background"
         android:layout_margin="10dp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:id="@+id/imageViewRow"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -32,11 +36,36 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:id="@+id/textViewRowDiscount"
+            android:text="Row desc"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewRowCondition"
+            android:text="Row desc"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:id="@+id/textViewRowDescription"
             android:text="Row desc"
             android:textColor="@color/cardview_light_background"
             android:textSize="25dp"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewRowCategory"
+            android:text="Row desc"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="25dp"
+            />
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void populateViewHolder(CouponViewHolder viewHolder, CouponData model, int position) {
                 viewHolder.setTitle(model.getBrand());
-                viewHolder.setDesc(model.getDiscount());
+                viewHolder.setDiscount(model.getDiscount());
+                viewHolder.setCardCondition(model.getCondition());
+//              viewHolder.setCardDescription(model.getCategory());
                 viewHolder.setImage(getApplicationContext(),model.getImage());
             }
         };
