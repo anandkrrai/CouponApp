@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    android:elevation="90dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageViewBrand"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBrandscheme"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|center"
+                android:text="Row title"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textViewBrandcode"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Row discount"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
