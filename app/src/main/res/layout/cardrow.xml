@@ -10,13 +10,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/cardview_dark_background"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
         android:layout_margin="10dp">
 
         <ImageView
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
             android:scaleType="fitXY"
             android:id="@+id/imageViewRow"/>
         <LinearLayout
@@ -24,47 +24,36 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/textViewRow"
-            android:text="Row title"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="25dp"
-            />
+            <TextView
+                android:id="@+id/textViewRow"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal|center"
+                android:text="Row title"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/textViewRowDiscount"
-            android:text="Row desc"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="25dp"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/textViewRowCondition"
-            android:text="Row desc"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="25dp"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/textViewRowDescription"
-            android:text="Row desc"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="25dp"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:id="@+id/textViewRowCategory"
-            android:text="Row desc"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="25dp"
-            />
+            <TextView
+                android:id="@+id/textViewRowDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="Row discount"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textViewRowCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center"
+                android:text="Row Condition"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25dp" />
+
+
         </LinearLayout>
 
     </LinearLayout>
