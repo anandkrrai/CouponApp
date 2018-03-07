@@ -14,8 +14,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="41dp"
+        android:background="#000000"
+        android:fontFamily="casual"
         android:padding="15dp"
-        android:text="Shop by Brands" />
+        android:text=" Click to Shop by Brands"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"

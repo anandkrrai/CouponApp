@@ -12,6 +12,7 @@ public class Main4Activity extends AppCompatActivity {
     ListView lst;
     String[] names={"bigbaazar","amazon","flipkart","goibibo","pvr","swiggy"};
     String optionChosen;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
