@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.anand.couponapp.MainActivity"
-    android:backgroundTint="@color/cardview_shadow_end_color">
+    android:background="#f1c40f "
+    tools:context="com.example.anand.couponapp.MainActivity">
 
     <Button
         android:id="@+id/differentView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="11dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="41dp"
+        android:padding="15dp"
         android:text="Shop by Brands" />
 
     <android.support.v7.widget.RecyclerView

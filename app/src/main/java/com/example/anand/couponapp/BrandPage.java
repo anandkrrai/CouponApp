@@ -24,7 +24,7 @@ public class BrandPage extends AppCompatActivity {
         BrandName=bundle.getString("BrandName");
 
         database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference().child(BrandName);
+        databaseReference = database.getReference().child("part2/"+BrandName);
         databaseReference.keepSynced(true);
 
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerViewBrand);
