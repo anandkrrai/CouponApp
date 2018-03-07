@@ -17,7 +17,7 @@
         android:background="#000000"
         android:fontFamily="casual"
         android:padding="15dp"
-        android:text=" Click to Shop by Brands"
+        android:text=" Click here to Shop by Brands"
         android:textColor="#ffffff"
         android:textSize="18sp" />
 

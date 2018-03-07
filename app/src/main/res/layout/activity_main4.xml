@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="casual"
         android:gravity="center_horizontal"
-        android:text="Choose the brand"
+        android:text="Choose the brand name "
         android:textSize="50sp"
         android:textStyle="bold|italic" />
 
@@ -57,18 +57,7 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="200sp"
-                android:layout_height="200sp"
-                android:layout_margin="10sp"
-                android:layout_weight="1"
-                android:background="#000000"
-                android:outlineProvider="bounds"
-                android:padding="10sp"
-                app:srcCompat="@drawable/amazon" />
-
-            <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageViewbigbaazar"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_margin="10sp"
@@ -79,7 +68,7 @@
                 app:srcCompat="@drawable/bigbaazar" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageViewflipkart"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_margin="10sp"
@@ -89,8 +78,19 @@
                 android:padding="10sp"
                 app:srcCompat="@drawable/flipkart" />
 
+            <ImageButton
+                android:id="@+id/imageViewamazon"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:outlineProvider="bounds"
+                android:padding="10sp"
+                app:srcCompat="@drawable/amazon" />
+
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageViewgoibibo"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_margin="10sp"
@@ -101,7 +101,7 @@
                 app:srcCompat="@drawable/goibibo" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageViewpvr"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_margin="10sp"
@@ -112,7 +112,7 @@
                 app:srcCompat="@drawable/pvr" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageViewswiggy"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_margin="10sp"

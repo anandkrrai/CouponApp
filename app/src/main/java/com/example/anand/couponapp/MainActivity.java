@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             protected void populateViewHolder(CouponViewHolder viewHolder, CouponData model, int position) {
                     viewHolder.setTitle(model.getBrand());
 //                viewHolder.setCardCategory(model.getCategory());
+
                     viewHolder.setDiscount(model.getDiscount());
                     viewHolder.setCardCondition(model.getCondition());
                     viewHolder.setImage(getApplicationContext(), model.getImage());
