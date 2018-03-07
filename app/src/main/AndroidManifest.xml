@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".send_data" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".BrandPage"></activity>
+        <activity android:name=".BrandPage" />
+        <activity android:name=".Main4Activity"></activity>
     </application>
 
 </manifest>

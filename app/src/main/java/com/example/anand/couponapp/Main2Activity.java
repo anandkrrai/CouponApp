@@ -3,10 +3,15 @@ package com.example.anand.couponapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -25,15 +30,20 @@ public class Main2Activity extends AppCompatActivity {
 
         GridViewAdapter adapter = new GridViewAdapter(Main2Activity.this);
 
-        listView.setAdapter(adapter);
+            listView.setAdapter(adapter);
 
-            btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(Main2Activity.this,BrandPage.class);
-                    startActivity(intent
-                    );
-                }
-            });
+
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main2Activity.this,BrandPage.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 }

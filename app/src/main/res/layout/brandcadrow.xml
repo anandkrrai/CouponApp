@@ -10,12 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/colorAccent"
+        android:background="@color/cardview_shadow_start_color"
         android:layout_margin="10dp">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="260dp"
+            android:layout_height="200dp"
             android:scaleType="fitXY"
             android:id="@+id/imageViewBrand"/>
         <LinearLayout

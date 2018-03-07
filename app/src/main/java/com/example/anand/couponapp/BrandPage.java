@@ -13,14 +13,18 @@ public class BrandPage extends AppCompatActivity {
     private RecyclerView recyclerView;
     private DatabaseReference databaseReference;
     private FirebaseDatabase database;
+    private String BrandName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brand_page);
 
+        Bundle bundle =getIntent().getExtras();
+        BrandName=bundle.getString("BrandName");
+
         database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference().child("amazon");
+        databaseReference = database.getReference().child(BrandName);
         databaseReference.keepSynced(true);
 
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerViewBrand);
@@ -38,7 +42,7 @@ public class BrandPage extends AppCompatActivity {
             @Override
             protected void populateViewHolder(BrandCouponViewHolder viewHolder, BrandCouponData model, int position) {
 
-                viewHolder.setCardCode(model.getCode());
+                viewHolder.setCardCode("COUPON : "+model.getCode());
                 viewHolder.setCardscheme(model.getScheme());
                 viewHolder.setImage(getApplicationContext(),model.getImage());
             }

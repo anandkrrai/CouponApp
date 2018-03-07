@@ -42,7 +42,6 @@ public class GridViewAdapter extends BaseAdapter {
         ImageView imageView;
         imageView = new ImageView(context);
         imageView.setImageResource(images[position]);
-//        imageView.setLayoutParams(new GridLayout.LayoutParams(062,50));
 
 
         return imageView;
