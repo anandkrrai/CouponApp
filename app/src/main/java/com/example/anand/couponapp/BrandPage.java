@@ -29,6 +29,8 @@ public class BrandPage extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerViewBrand);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+//        recyclerView.addOnItemTouchListener(new Vi);
     }
 
 

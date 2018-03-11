@@ -9,25 +9,30 @@
 
     <Button
         android:id="@+id/differentView"
-        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
         android:background="#000000"
+        android:elevation="24dp"
+        android:fadingEdge="horizontal|vertical"
         android:fontFamily="casual"
         android:padding="15dp"
         android:text=" Click here to Shop by Brands"
+        android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:visibility="visible" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/differentView"
         android:layout_below="@+id/differentView"
-        android:layout_marginTop="24dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp">
 
     </android.support.v7.widget.RecyclerView>
 

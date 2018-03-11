@@ -15,7 +15,6 @@ import com.squareup.picasso.Picasso;
 class CouponViewHolder extends RecyclerView.ViewHolder{
     private final TextView cardBrand;
     private final TextView cardDiscount;
-//    private final TextView cardCategory;
     private final TextView cardCondition;
     private final ImageView imageView;
 
@@ -28,11 +27,7 @@ class CouponViewHolder extends RecyclerView.ViewHolder{
         imageView= (ImageView)itemView.findViewById(R.id.imageViewRow);
         cardBrand= (TextView)itemView.findViewById(R.id.textViewRow);
         cardDiscount= (TextView)itemView.findViewById(R.id.textViewRowDiscount);
-//        cardCategory=(TextView)imageView.findViewById(R.id.textViewRowCategory);
         cardCondition=(TextView)itemView.findViewById(R.id.textViewRowCondition);
-
-
-
 
     }
     public void setTitle(String title){
@@ -42,10 +37,6 @@ class CouponViewHolder extends RecyclerView.ViewHolder{
     public void setDiscount(String discount){
         cardDiscount.setText(discount);
     }
-
-//    public void setCardCategory(String cat){
-//        cardCategory.setText(cat);
-//    }
 
     public void setCardCondition(String condition){
         cardCondition.setText(condition);
